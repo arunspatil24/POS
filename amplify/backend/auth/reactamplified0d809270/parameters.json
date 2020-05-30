@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "posappb067ebb2_identitypool_b067ebb2",
+    "identityPoolName": "reactamplified0d809270_identitypool_0d809270",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "posappb067ebb2",
-    "userPoolName": "posappb067ebb2_userpool_b067ebb2",
+    "resourceNameTruncated": "reacta0d809270",
+    "userPoolName": "reactamplified0d809270_userpool_0d809270",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "posappb067ebb2_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "reacta0d809270_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "b067ebb2",
-    "resourceName": "posappb067ebb2",
+    "sharedId": "0d809270",
+    "resourceName": "reactamplified0d809270",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [

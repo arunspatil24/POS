@@ -1,17 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Amplify, { Auth } from 'aws-amplify';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 
-import awsconfig from './aws-exports';
-Amplify.configure(awsconfig);
+import Amplify from "aws-amplify";
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
 
 function App() {
   return (
     <div>
       <AmplifySignOut />
-       My App
+      <div>
+        Welcome to Omega POS Application
+      </div>
     </div>
   );
 }

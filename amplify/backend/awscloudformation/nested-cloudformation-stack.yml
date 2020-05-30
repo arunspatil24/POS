@@ -68,15 +68,15 @@
 				}
 			}
 		},
-		"authposappb067ebb2": {
+		"authreactamplified0d809270": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/amplify-posapp-dev-150435-deployment/amplify-cfn-templates/auth/posappb067ebb2-cloudformation-template.yml",
+				"TemplateURL": "https://s3.amazonaws.com/amplify-reactamplified-dev-181557-deployment/amplify-cfn-templates/auth/reactamplified0d809270-cloudformation-template.yml",
 				"Parameters": {
-					"identityPoolName": "posappb067ebb2_identitypool_b067ebb2",
+					"identityPoolName": "reactamplified0d809270_identitypool_0d809270",
 					"allowUnauthenticatedIdentities": false,
-					"resourceNameTruncated": "posappb067ebb2",
-					"userPoolName": "posappb067ebb2_userpool_b067ebb2",
+					"resourceNameTruncated": "reacta0d809270",
+					"userPoolName": "reactamplified0d809270_userpool_0d809270",
 					"autoVerifiedAttributes": "email",
 					"mfaConfiguration": "OFF",
 					"mfaTypes": "SMS Text Message",
@@ -92,10 +92,10 @@
 					"userpoolClientRefreshTokenValidity": 30,
 					"userpoolClientWriteAttributes": "email",
 					"userpoolClientReadAttributes": "email",
-					"userpoolClientLambdaRole": "posappb067ebb2_userpoolclient_lambda_role",
+					"userpoolClientLambdaRole": "reacta0d809270_userpoolclient_lambda_role",
 					"userpoolClientSetAttributes": false,
-					"sharedId": "b067ebb2",
-					"resourceName": "posappb067ebb2",
+					"sharedId": "0d809270",
+					"resourceName": "reactamplified0d809270",
 					"authSelections": "identityPoolAndUserPool",
 					"authRoleArn": {
 						"Fn::GetAtt": [
@@ -121,7 +121,7 @@
 			"DependsOn": [
 				"AuthRole",
 				"UnauthRole",
-				"authposappb067ebb2"
+				"authreactamplified0d809270"
 			],
 			"Type": "AWS::Lambda::Function",
 			"Properties": {
@@ -204,7 +204,7 @@
 				},
 				"idpId": {
 					"Fn::GetAtt": [
-						"authposappb067ebb2",
+						"authreactamplified0d809270",
 						"Outputs.IdentityPoolId"
 					]
 				},

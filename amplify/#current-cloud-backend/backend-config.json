@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"posappb067ebb2": {
+		"reactamplified0d809270": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],
